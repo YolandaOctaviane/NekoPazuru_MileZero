@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cat : MonoBehaviour
 {
     [Header("Movement")]
+    [SerializeField] public bool isDed = false;
     [SerializeField] Transform[] positions;
     [SerializeField] float speed;
 
