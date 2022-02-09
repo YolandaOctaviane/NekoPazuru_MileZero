@@ -49,7 +49,7 @@ public class Bridge : MonoBehaviour
 
     private void Update()
     {
-        if (timeIsRunning)
+        /*if (timeIsRunning)
         {
             if (timer > 0f)
             {
@@ -60,6 +60,6 @@ public class Bridge : MonoBehaviour
                 timeIsRunning = false;
                 GetComponent<SpriteRenderer>().enabled = false;
             }
-        }
+        }*/
     }
 }
