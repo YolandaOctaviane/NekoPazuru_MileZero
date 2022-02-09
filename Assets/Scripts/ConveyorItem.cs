@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ConveyorItem : MonoBehaviour
 {
-    
+    public ConveyorType type;
+}
 
+public enum ConveyorType
+{
+    Fish, BridgeHorizontal, BridgeVertical  
 }
