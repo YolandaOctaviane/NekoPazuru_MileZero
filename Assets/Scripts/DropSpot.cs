@@ -17,10 +17,12 @@ public class DropSpot : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         var dragItem = _dragManager.draggingItem;
+        Debug.Log(dragItem.type + " : " + type);
         if(dragItem.type == type)
         {
             Debug.Log("Sesuai");
             itemRenderer.SetActive(true);
         }
+        
     }
 }

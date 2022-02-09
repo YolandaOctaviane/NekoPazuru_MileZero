@@ -5,7 +5,7 @@ using UnityEngine;
 public class DragManager : MonoBehaviour
 {
     private bool _isDragging;
-    private ConveyorItem _draggingItem;
+    [SerializeField]private ConveyorItem _draggingItem;
         public bool isDragging
             { 
                 get => _isDragging; 

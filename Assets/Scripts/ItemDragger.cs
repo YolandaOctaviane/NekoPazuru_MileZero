@@ -37,6 +37,7 @@ public class ItemDragger : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
         _dragManager.draggingItem = null;
         _collider.enabled = true;
         transform.position = _defaultPosition;
+        Debug.Log("Anjay");
     }
 
     public void OnDrag(PointerEventData eventData)
