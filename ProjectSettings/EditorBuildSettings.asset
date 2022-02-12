@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Production/Main.unity
+    guid: 47421ae64a529b74f93115c9b071d2aa
+  - enabled: 1
+    path: Assets/Scenes/Production/Stage_1.unity
+    guid: ef88a40cd54b51546a53ebc1d76bb5e8
+  - enabled: 0
+    path: Assets/Scenes/Production/Stage_2.unity
+    guid: 2db5acf039cd6e244abeb978835e0804
+  - enabled: 0
+    path: Assets/Scenes/Production/Stage_3.unity
+    guid: 1b533b11ea161b74dabe09115fc2400c
+  - enabled: 0
+    path: Assets/Scenes/Production/Stage_4.unity
+    guid: 53cc23ad8cfb9e34f98a719da65d2b02
+  - enabled: 0
+    path: Assets/Scenes/Production/Stage_5.unity
+    guid: 30078c5f764f4f14fb9321003dc591ae
+  - enabled: 1
+    path: Assets/Scenes/Sandbox/Death Animation Sandbox.unity
+    guid: cd547f25f18d00549adf9b7d6f3cab01
   m_configObjects: {}
