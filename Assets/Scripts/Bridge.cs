@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -7,17 +7,16 @@ public class Bridge : MonoBehaviour
 {
     [SerializeField] private float timer = 2;
     [SerializeField] bool timeIsRunning = false;
+    [SerializeField] public bool isBuilt = false;
     private float defaultTimer;
     private Cat cat;
+    [SerializeField] TilemapRenderer tilemap;
+    private int counter = 0;
 
-    private void Start()
+    private void Awake()
     {
         defaultTimer = timer;
-
-        if (GetComponent<SpriteRenderer>().enabled)
-        {
-            timeIsRunning = true;
-        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,15 +24,16 @@ public class Bridge : MonoBehaviour
         cat = collision.GetComponent<Cat>();
         if (cat != null)
         {
-            timeIsRunning = false;
+            timer = 100f;
             //death if no bridge
-            if (GetComponent<SpriteRenderer>().enabled == false)
+            if (!isBuilt)
             {
                 cat.isDed = true;
             }
+            counter++;
         }
 
-
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -41,25 +41,40 @@ public class Bridge : MonoBehaviour
         cat = collision.GetComponent<Cat>();
         if (cat != null)
         {
-            timeIsRunning = false;
-            timer = defaultTimer;
-            GetComponent<SpriteRenderer>().enabled = false;
+            counter--;
+        }
+        if (counter == 0 && cat)
+        {
+            timer = 0f;
         }
     }
 
     private void Update()
     {
-        /*if (timeIsRunning)
+        if (isBuilt)
         {
-            if (timer > 0f)
+            timeIsRunning = true;
+            tilemap.enabled = true;
+        }
+        else
+        {
+            tilemap.enabled = false;
+        }
+
+        if (timeIsRunning)
+        {
+            if(timer > 0f)
             {
                 timer -= Time.deltaTime;
             }
             else
             {
                 timeIsRunning = false;
-                GetComponent<SpriteRenderer>().enabled = false;
+                timer = defaultTimer;
+                isBuilt = false;
+                tilemap.gameObject.transform.localScale = Vector3.zero;
             }
-        }*/
+        }
     }
+
 }

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8079625505520451246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8079625505520451247}
+  - component: {fileID: 8079625505520451244}
+  m_Layer: 0
+  m_Name: SFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8079625505520451247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8079625505520451246}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.68091, y: 5.7567563, z: 1677.3595}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8079625505520451244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8079625505520451246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 543336ee7f324c34f9ecca5704dd1f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: purr
+    clip: {fileID: 8300000, guid: fa73282a09f3e774bab8ecc2dc57ffb6, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: cat1
+    clip: {fileID: 8300000, guid: ff45e9a98f325e94c9012aa35c81a080, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: cat2
+    clip: {fileID: 8300000, guid: cd6c24c6ee6e8134c9cf03baa9932dd9, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: cat3
+    clip: {fileID: 8300000, guid: 853d2e754342adf47804f8f622f9fa95, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: dropBridge
+    clip: {fileID: 8300000, guid: 9bdd12dfbd9fc04498516341409bffb1, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: drown
+    clip: {fileID: 8300000, guid: 9802e0ad1fce0fb419deafc5577a0c8d, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: button1
+    clip: {fileID: 8300000, guid: a07f1e3c3438085498aa033125265699, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: button2
+    clip: {fileID: 8300000, guid: 6c0524bf4e02a5b409be78a0f9b4b6f5, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: eat
+    clip: {fileID: 8300000, guid: e4a6885b237c9a24781e928ccb35f3be, type: 3}
+    volume: 1
+    source: {fileID: 0}
+  - name: transition
+    clip: {fileID: 8300000, guid: 084b262777a9f0a4597562126cc72c82, type: 3}
+    volume: 1
+    source: {fileID: 0}

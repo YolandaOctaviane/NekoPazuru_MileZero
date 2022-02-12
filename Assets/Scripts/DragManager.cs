@@ -1,22 +1,20 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using System.Resources;
+using Belts;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class DragManager : MonoBehaviour
 {
-    private bool _isDragging;
-    [SerializeField]private ConveyorItem _draggingItem;
-        public bool isDragging
-            { 
-                get => _isDragging; 
-                set => _isDragging = value; 
-            }
+    public bool isDragging = false;
+    public GameObject draggingObject;
 
-        public ConveyorItem draggingItem
-            { 
-                get => _draggingItem; 
-                set => _draggingItem = value; 
-            }
-        
-    
+    public GameObject fishPrefab;
+
+
+    public void DestroyObject()
+    {
+        draggingObject.GetComponent<ItemDestroyer>().DestroyThis();
+    }
 }
