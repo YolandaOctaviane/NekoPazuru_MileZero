@@ -3092,7 +3092,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.6015663, y: 0.59887695, z: 0}
   m_MaxChunkCount: 16
@@ -5704,6 +5704,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 819588505897723016, guid: fe10e8e0f46ac054fb4411e93b982eb0, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1735347368939479362, guid: fe10e8e0f46ac054fb4411e93b982eb0, type: 3}
       propertyPath: m_TargetGraphic
       value: 
@@ -5716,6 +5720,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 936091975}
+    - target: {fileID: 1735347369193836738, guid: fe10e8e0f46ac054fb4411e93b982eb0, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6635288325325956690, guid: fe10e8e0f46ac054fb4411e93b982eb0, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -5763,6 +5771,14 @@ PrefabInstance:
     - target: {fileID: 6635288325325956691, guid: fe10e8e0f46ac054fb4411e93b982eb0, type: 3}
       propertyPath: m_Name
       value: Conveyor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635288325325956691, guid: fe10e8e0f46ac054fb4411e93b982eb0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635288326228121073, guid: fe10e8e0f46ac054fb4411e93b982eb0, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe10e8e0f46ac054fb4411e93b982eb0, type: 3}
