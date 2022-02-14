@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Production/Stage_3.unity
     guid: 1b533b11ea161b74dabe09115fc2400c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Production/Stage_4.unity
     guid: 53cc23ad8cfb9e34f98a719da65d2b02
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Production/Stage_5.unity
     guid: 30078c5f764f4f14fb9321003dc591ae
   - enabled: 1

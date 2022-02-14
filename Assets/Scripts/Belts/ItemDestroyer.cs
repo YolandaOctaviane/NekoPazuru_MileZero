@@ -18,15 +18,5 @@ namespace Belts
         {
             _generator.ShiftItemsInList(_position);
         }
-        
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            if (other.CompareTag("Trash"))
-            {
-                _generator.ShiftItemsInList(_position);
-                
-                Destroy(gameObject);
-            }
-        }
     }
 }
